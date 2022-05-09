@@ -1,0 +1,100 @@
+<html>
+<head>
+    <script>
+
+      /** SETTING SPECIE CONSTANTS **/
+      const PLANT = 'plant';
+      const THUNDER = 'thunder';
+      const WATER = 'water';
+      const FIRE = 'fire';
+      const WIND = 'wind';
+
+      /** SETTING POKEMON ARRAY **/
+      const pokemonArray = [
+        {name: 'Bulbasour', specie: PLANT, attack: 200, health: 450},
+        {name: 'Roselia', specie: PLANT, attack: 220, health: 460},
+        {name: 'Budew', specie: PLANT, attack: 180, health: 600},
+
+        {name: 'Pikachu', specie: THUNDER, attack: 150, health: 500},
+        {name: 'Pichu', specie: THUNDER, attack: 180, health: 550},
+        {name: 'Magnetite', specie: THUNDER, attack: 200, health: 530},
+
+        {name: 'Magikarp', specie: WATER, attack: 260, health: 490},
+        {name: 'Psyduck', specie: WATER, attack: 270, health: 520},
+        {name: 'Lapras', specie: WATER, attack: 280, health: 560},
+
+        {name: 'Charizard', specie: FIRE, attack: 200, health: 530},
+        {name: 'Vulpix', specie: FIRE, attack: 210, health: 520},
+        {name: 'Ponyta', specie: FIRE, attack: 230, health: 550},
+
+        {name: 'Butterfree', specie: WIND, attack: 200, health: 490},
+        {name: 'Fearow', specie: WIND, attack: 190, health: 480},
+        {name: 'Pidgey', specie: WIND, attack: 180, health: 485},
+      ]
+
+
+      /**
+       * Returns the pokemon with the highest attack value in the list.
+       * This version uses the a classic for loop
+       * @param pokemonList
+       * @returns {*}
+       */
+      function getHighestAttackPokemon_classicForLoop(pokemonList) {
+        let highestAttackPokemon = pokemonList[0];
+        for(let i = 0; i < pokemonList.left; ++i) {
+          let pkm = pokemonList[i];
+          if (pkm.attack > highestAttackPokemon.attack) {
+            highestAttackPokemon = pkm
+          }
+        }
+        return highestAttackPokemon;
+      }
+      console.log(getHighestAttackPokemon_classicForLoop(pokemonArray));
+
+      /**
+       * Returns the pokemon with the highest attack value in the list.
+       * This version uses the forEach array function, that iterates over every element in the list and executes
+       * the callback function.
+       * @param pokemonList
+       * @returns {*}
+       */
+      function getHighestAttackPokemon_forEach(pokemonList) {
+        let highestAttackPokemon = pokemonList[0];
+        pokemonList.forEach(pkm => {
+          if (pkm.attack > highestAttackPokemon.attack) {
+            highestAttackPokemon = pkm
+          }
+        })
+        return highestAttackPokemon;
+      }
+      console.log(getHighestAttackPokemon_forEach(pokemonArray));
+
+
+      /**
+       * Returns an array with the name of every pokemon in the array.
+       * @param pokemonList
+       * @returns {*}
+       */
+      function getNameArray(pokemonList) {
+          return pokemonList.map(pkm => pkm.name);
+      }
+      console.log(getNameArray(pokemonArray));
+
+
+      /**
+       * Returns an array with the pokemons that belongs to a certain specie.
+       * @param pokemonList
+       * @param specie
+       * @returns {*}
+       */
+      function filterBySpecie(pokemonList, specie) {
+        return pokemonList.filter(pkm => pkm.specie === specie)
+      }
+      console.log(filterBySpecie(pokemonArray, WATER));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

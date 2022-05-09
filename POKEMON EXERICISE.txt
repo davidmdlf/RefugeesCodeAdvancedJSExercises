@@ -1,0 +1,42 @@
+1. Set the following attributes to every Pokemon in your array:
+	attack: integer with a value (the value you want) of the attack punctuation of the Pokemon.
+	health: integer with a value (what you want) of the health amount of the Pokemon.
+	specie: with any of these values (is irrelevant if it fits the real specie or not)
+		- water
+		- thunder
+		- fire
+		- plant
+		- wind
+	
+2. Make a function that returns every Pokemon for a given specie.
+
+3. Make a function that returns an array with every Pokemon's name.
+
+4. Make a function that return the Pokemon with the highest attack.
+
+5. Make a function that adds every health punctuation in a Pokemon array and returns the total amount.
+
+6. Make a new function that chains the functions in points 2 and 3, to return the Pokemon with the highest attack of a certain specie.
+
+
+
+=========== ESPAÑOL ===============
+1. Define para cada Pokemon en tu array los siguientes atributos:
+	attack: número entero con un valor (el que quieras) de la puntuación de ataque del Pokemon.
+	health: número entero con un valor (el que quieras) de la salud del Pokemon.
+	specie: con alguno de los siguientes valores (no te preocupes si encaja o no con la especie real)
+		- water: agua
+		- thunder: rayo
+		- fire: fuego
+		- plant: planta
+		- wind: viento
+	
+2. Haz una función que devuelva todos los Pokemon que pertenecen a una especie concreta.
+
+3. Haz una función que devuelva un array con los nombres de los pokemon
+
+4. Haz una función que devuelva al Pokemon con la mayor puntuación de ataque.
+
+5. Haz una función que sume todas las puntuaciones de salud de un array de Pokemon y devuelva el total.
+
+6. Haz una función que encadene las funciones realizadas en los puntos 2 y 3, de forma que devuelva el Pokemon con la mayor puntuación de ataque en una especie concreta.
