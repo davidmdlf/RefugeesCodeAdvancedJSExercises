@@ -1,0 +1,24 @@
+1. Implement a function that counts from a number given by parameter, to another number given as second parameter.
+	It should print in console every number between both of them. Tip: recursion is a good friend
+
+2. Implement a function that calculates the result of a number raised to the power of a second number.
+ It should receives two parameters:
+   - A number that is going to be the base
+   - Another number that is going to be the power to elevate to (exponent)
+ Tip: a number raised to a power is that number multiplied by itself many times as the second number indicates
+
+3. Implement a constructor for a class called Student. The constructor should receive the next parameters:
+	- name. A string
+	- age. A number
+	- academicRecord. An object with the following attributes:
+		- maths. As value, set a number (the number that you want between 0 and 100)
+		- literature. As value, set a number (the number that you want between 0 and 100)
+		- science. As value, set a number (the number that you want between 0 and 100).
+	Use the constructor to create an object and store it in a variable.
+	Then, use console.log to show the information of the student and the grade in science. It should result on something like this:
+		"David (33) has a grade of 100 in science"
+
+4. In the constructor, you can define as attributes of the class some functions that works with the information in the class.
+In this exercise, you have to define a function inside the class Student that receives as parameter the name of a subject
+and prints the same message than in the previous exercise. If the subject that receives is not a valid subject, it should
+show a message to inform it. Defines the function as an arrow function.
