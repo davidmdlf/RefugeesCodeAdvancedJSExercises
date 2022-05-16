@@ -92,6 +92,31 @@
       }
       console.log(filterBySpecie(pokemonArray, WATER));
 
+
+      /**
+       * Returnd the best attacker that belongs to a certain specie
+       * @param pokemonList
+       * @param specie
+       * @returns {*}
+       */
+      function getTotalAmountOfHealth(pokemonList, specie) {
+        return pokemonList.reduce((accum, pkm) => { return accum += pkm.health }, 0)
+      }
+      console.log(getTotalAmountOfHealth(pokemonArray, WIND))
+
+
+      /**
+       * Returnd the best attacker that belongs to a certain specie
+       * @param pokemonList
+       * @param specie
+       * @returns {*}
+       */
+      function getHighestAttackerInSpecie(pokemonList, specie) {
+        const filteredArray = filterBySpecie(pokemonList, specie);
+        return getHighestAttackPokemon_forEach(filteredArray);
+      }
+      console.log(getHighestAttackerInSpecie(pokemonArray, FIRE))
+
     </script>
 </head>
 <body>
